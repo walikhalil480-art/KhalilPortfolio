@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects &amp; Case Studies — Khalil Wali</title>
+  <meta name="description" content="Production software engineering case studies, digital reading platforms, and cloud infrastructure projects by Khalil Wali." />
+  <!-- Editorial Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="site-container header-inner">
+      <a href="index.html" class="brand" aria-label="Khalil Wali Home">
+        <span class="brand-name">Khalil <em>Wali</em></span>
+        <span class="brand-role">Software Engineer</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="expertise.html" class="nav-link">Expertise</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn-header-inquiry">
+          <span>Get in Touch</span>
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Projects Hero Header -->
+    <section class="section-spacer-top" style="padding-bottom: 40px;" aria-label="Projects Introduction">
+      <div class="site-container">
+        <span class="kicker">Selected Engineering Works</span>
+        <h1 class="hero-headline" style="margin-bottom: 16px;">
+          Architectural <em>Case Studies</em>
+        </h1>
+        <p class="section-header-desc" style="max-width: 760px;">
+          A transparent review of systems I have designed and engineered—examining real operational challenges, architectural decisions, and technology selections.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Detailed Case Studies -->
+    <section class="section-spacer-bottom" aria-label="Featured Projects">
+      <div class="site-container">
+
+        <!-- Case Study 01: Understory Books -->
+        <article class="case-study-feature" id="understory">
+          <img src="assets/understory-books.png" alt="Understory Books interface showcase" class="case-study-hero-img" width="1200" height="675" loading="eager" />
+
+          <div class="case-study-body-grid">
+            <div class="case-study-main">
+              <span class="kicker">Digital Reading Platform</span>
+              <h2 class="section-title">Understory Books</h2>
+              <p class="editorial-lead">
+                A modern digital bookstore and long-form reading environment built for literature enthusiasts and independent publishers.
+              </p>
+              
+              <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 16px;">
+                <h3 class="subheading">The Challenge</h3>
+                <p class="body-text">
+                  Rendering complex editorial books on diverse web viewports typically suffers from jarring layout shifts (CLS), sluggish navigation across thousands of pages, and reader state drift when synchronizing progress between devices. Standard off-the-shelf reader components introduced heavy script payloads and lacked support for nuanced typographic styling.
+                </p>
+
+                <h3 class="subheading">The Architectural Solution</h3>
+                <p class="body-text">
+                  I developed a client-side chunking engine using React that parses book content progressively and caches read positions in local storage before synchronizing asynchronously with a Node.js REST API. On the persistence tier, PostgreSQL was structured with normalized tables for book editions, chapter fragments, and reader telemetry. Custom CSS font rendering and CSS Grid layouts ensured zero layout shifting during font hydration.
+                </p>
+              </div>
+
+              <div class="btn-group" style="margin-top: 16px;">
+                <a href="https://github.com/walikhalil480-art" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  <span>View on GitHub</span>
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="contact.html" class="btn-secondary">
+                  <span>Inquire About Similar Work</span>
+                </a>
+              </div>
+            </div>
+
+            <aside class="case-study-sidebar">
+              <div>
+                <h4 class="sidebar-group-title">Primary Focus</h4>
+                <p class="sidebar-group-content">Full-Stack Architecture &amp; Typographic UI</p>
+              </div>
+
+              <div>
+                <h4 class="sidebar-group-title">Technology Stack</h4>
+                <div class="showcase-tags">
+                  <span class="tag-pill">React</span>
+                  <span class="tag-pill">TypeScript</span>
+                  <span class="tag-pill">Node.js</span>
+                  <span class="tag-pill">Express</span>
+                  <span class="tag-pill">PostgreSQL</span>
+                  <span class="tag-pill">Docker</span>
+                  <span class="tag-pill">AWS S3</span>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="sidebar-group-title">Key Outcomes</h4>
+                <p class="sidebar-group-content">
+                  Stable layout rendering, fluid page turning without reflow stutter, and clean offline-first reading resilience.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </article>
+
+        <!-- Case Study 02: TillPro -->
+        <article class="case-study-feature" id="tillpro">
+          <img src="assets/till-pro.png" alt="TillPro Point of Sale retail touch terminal" class="case-study-hero-img" width="1200" height="675" loading="lazy" />
+
+          <div class="case-study-body-grid">
+            <div class="case-study-main">
+              <span class="kicker">Retail &amp; Commerce Engine</span>
+              <h2 class="section-title">TillPro Point of Sale</h2>
+              <p class="editorial-lead">
+                A multi-terminal store management and checkout platform engineered for independent retail boutiques.
+              </p>
+
+              <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 16px;">
+                <h3 class="subheading">The Challenge</h3>
+                <p class="body-text">
+                  In a high-paced retail environment, slow register interfaces lead to lost sales. The client needed a system that supports instant barcode lookups, reliable multi-register cart management, and seamless offline checkout in the event of an internet disruption—without corrupting inventory numbers when connection resumes.
+                </p>
+
+                <h3 class="subheading">The Architectural Solution</h3>
+                <p class="body-text">
+                  I architected a local-first state layer utilizing Next.js, Redis, and IndexedDB for local registers. Cashiers can scan, adjust quantities, apply discounts, and complete transactions entirely offline. An event-driven reconciliation worker handles queued orders, syncing them to a PostgreSQL transactional database with strict stock row locking to prevent overselling.
+                </p>
+              </div>
+
+              <div class="btn-group" style="margin-top: 16px;">
+                <a href="https://github.com/walikhalil480-art" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  <span>View Repository</span>
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a href="contact.html" class="btn-secondary">
+                  <span>Discuss POS Solutions</span>
+                </a>
+              </div>
+            </div>
+
+            <aside class="case-study-sidebar">
+              <div>
+                <h4 class="sidebar-group-title">Primary Focus</h4>
+                <p class="sidebar-group-content">Local-First Architecture &amp; Concurrency Control</p>
+              </div>
+
+              <div>
+                <h4 class="sidebar-group-title">Technology Stack</h4>
+                <div class="showcase-tags">
+                  <span class="tag-pill">Next.js</span>
+                  <span class="tag-pill">TypeScript</span>
+                  <span class="tag-pill">Node.js</span>
+                  <span class="tag-pill">PostgreSQL</span>
+                  <span class="tag-pill">Redis</span>
+                  <span class="tag-pill">Docker</span>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="sidebar-group-title">Key Outcomes</h4>
+                <p class="sidebar-group-content">
+                  Instantaneous barcode lookups, zero register lockups, and clean reconciliation between multi-store inventories.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </article>
+
+        <!-- Case Study 03: Cloud & Infrastructure -->
+        <article class="case-study-feature" id="cloud">
+          <img src="assets/cloud-datacenter.png" alt="Cloud infrastructure datacenter" class="case-study-hero-img" width="1200" height="675" loading="lazy" />
+
+          <div class="case-study-body-grid">
+            <div class="case-study-main">
+              <span class="kicker">DevOps &amp; Cloud Topology</span>
+              <h2 class="section-title">Cloud Infrastructure &amp; CI/CD Pipelines</h2>
+              <p class="editorial-lead">
+                Declarative cloud environments, automated deployment workflows, and reproducible container clusters.
+              </p>
+
+              <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 16px;">
+                <h3 class="subheading">The Challenge</h3>
+                <p class="body-text">
+                  Manual deployments across staging and production frequently lead to environment drift, unverified configuration differences, and deployment downtime. Engineering teams waste valuable hours troubleshooting inconsistencies between local machines and production servers.
+                </p>
+
+                <h3 class="subheading">The Architectural Solution</h3>
+                <p class="body-text">
+                  I established reproducible infrastructure configurations using Terraform and Docker. Services are containerized with multi-stage builds to produce lean, minimal-attack-surface container images. Automated GitHub Actions pipelines execute automated test suites, linting, and security audits on pull requests before orchestrating rolling updates on AWS clusters with zero downtime.
+                </p>
+              </div>
+
+              <div class="btn-group" style="margin-top: 16px;">
+                <a href="expertise.html" class="btn-primary">
+                  <span>Explore DevOps Expertise</span>
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <aside class="case-study-sidebar">
+              <div>
+                <h4 class="sidebar-group-title">Primary Focus</h4>
+                <p class="sidebar-group-content">Infrastructure as Code &amp; Automated Delivery</p>
+              </div>
+
+              <div>
+                <h4 class="sidebar-group-title">Technology Stack</h4>
+                <div class="showcase-tags">
+                  <span class="tag-pill">Kubernetes</span>
+                  <span class="tag-pill">Minikube</span>
+                  <span class="tag-pill">Docker</span>
+                  <span class="tag-pill">AWS</span>
+                  <span class="tag-pill">Terraform</span>
+                  <span class="tag-pill">GitHub Actions</span>
+                  <span class="tag-pill">Bash</span>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="sidebar-group-title">Key Outcomes</h4>
+                <p class="sidebar-group-content">
+                  Eliminated configuration divergence, established automated test verification, and enabled predictable, rollback-ready deployments.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 3. Direct Contact CTA -->
+    <section class="section-spacer-bottom" aria-label="Contact Invitation">
+      <div class="site-container">
+        <div class="cta-banner-dark">
+          <div class="cta-banner-content">
+            <div class="cta-banner-kicker">New Opportunities</div>
+            <h2 class="cta-banner-title">Need architectural leadership for your web application?</h2>
+            <p class="cta-banner-desc">
+              I collaborate with founders, engineering teams, and businesses to design clean, dependable software systems.
+            </p>
+          </div>
+          <div class="cta-banner-action">
+            <a href="contact.html" class="btn-terracotta">
+              <span>Initiate an Inquiry</span>
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-grid">
+        
+        <div>
+          <div class="footer-brand">Khalil <em>Wali</em></div>
+          <p class="footer-tagline">
+            Software engineer building disciplined backend architectures, reliable cloud infrastructure, and polished digital reading platforms.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Directory</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="about.html" class="footer-nav-link">About</a></li>
+            <li><a href="projects.html" class="footer-nav-link">Projects</a></li>
+            <li><a href="expertise.html" class="footer-nav-link">Expertise</a></li>
+            <li><a href="experience.html" class="footer-nav-link">Experience</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Channels &amp; Contact</h4>
+          <div class="footer-channels-list">
+            <div class="footer-channel-row">
+              <span class="footer-channel-key">Email</span>
+              <a href="mailto:walikhalil@gmail.com" class="footer-channel-val">walikhalil@gmail.com</a>
+            </div>
+            <div class="footer-channel-row">
+              <span class="footer-channel-key">GitHub</span>
+              <a href="https://github.com/walikhalil480-art" target="_blank" rel="noopener noreferrer" class="footer-channel-val">walikhalil480-art</a>
+            </div>
+            <div class="footer-channel-row">
+              <span class="footer-channel-key">LinkedIn</span>
+              <a href="https://linkedin.com/in/khalil-abdi-wali" target="_blank" rel="noopener noreferrer" class="footer-channel-val">khalil-abdi-wali</a>
+            </div>
+            <div class="footer-channel-row">
+              <span class="footer-channel-key">Domain</span>
+              <a href="https://tijabo.online" target="_blank" rel="noopener noreferrer" class="footer-channel-val">tijabo.online</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2025 Khalil Wali. Designed with editorial care and clean software principles.</div>
+        <div>Available for select engineering engagements</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

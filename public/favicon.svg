@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#283C32"/>
+  <!-- Elegant KW Monogram -->
+  <text x="32" y="42" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="700" fill="#FCF9F0" text-anchor="middle" letter-spacing="-1">KW</text>
+  <!-- Subtle Terracotta Accent Dot -->
+  <circle cx="49" cy="23" r="3.5" fill="#B4533C"/>
+</svg>

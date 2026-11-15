@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Khalil Wali — Résumé</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 14mm 16mm 14mm 16mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 10pt;
+      line-height: 1.45;
+      color: #1c2420;
+      background: #ffffff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .header {
+      border-bottom: 2px solid #283C32;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .name-block h1 {
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 26pt;
+      font-weight: 700;
+      color: #283C32;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .name-block .title {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #B4533C;
+      margin-top: 4px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .contact-block {
+      text-align: right;
+      font-size: 8.5pt;
+      color: #4a5550;
+      line-height: 1.5;
+    }
+    .contact-block a {
+      color: #283C32;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .section {
+      margin-bottom: 14px;
+    }
+    .section-title {
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 11.5pt;
+      font-weight: 700;
+      color: #283C32;
+      border-bottom: 1px solid #d4d9d4;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    .summary-text {
+      font-size: 9pt;
+      color: #333d37;
+      line-height: 1.45;
+      text-align: justify;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      row-gap: 5px;
+      column-gap: 12px;
+      font-size: 8.8pt;
+    }
+    .skill-cat {
+      font-weight: 600;
+      color: #283C32;
+    }
+    .skill-list {
+      color: #333d37;
+    }
+    .item {
+      margin-bottom: 10px;
+    }
+    .item:last-child {
+      margin-bottom: 0;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .item-title {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #1c2420;
+    }
+    .item-sub {
+      font-size: 9pt;
+      font-weight: 600;
+      color: #B4533C;
+    }
+    .item-date {
+      font-size: 8.5pt;
+      color: #616e66;
+      font-weight: 500;
+    }
+    .item-bullets {
+      margin-left: 16px;
+      margin-top: 3px;
+      font-size: 8.8pt;
+      color: #333d37;
+      line-height: 1.38;
+    }
+    .item-bullets li {
+      margin-bottom: 2px;
+    }
+    .project-tech {
+      font-size: 8pt;
+      font-style: italic;
+      color: #55625b;
+      margin-top: 2px;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="name-block">
+      <h1>Khalil Wali</h1>
+      <div class="title">Senior Full-Stack &amp; Software Architect</div>
+    </div>
+    <div class="contact-block">
+      <div>walikhalil480@gmail.com &bull; +252 (0) 61 718 2000</div>
+      <div><a href="https://github.com/walikhalil480-art">github.com/walikhalil480-art</a></div>
+      <div><a href="https://linkedin.com/in/khalil-wali">linkedin.com/in/khalil-wali</a> &bull; Mogadishu, Somalia</div>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="summary-text">
+      Senior Full-Stack Engineer and Systems Architect with 6+ years of production experience engineering resilient distributed backends, offline-first client architectures, and high-performance editorial interfaces. Deep expertise across TypeScript, Node.js, React, PostgreSQL, Docker, and Kubernetes. Proven record architecting sub-second transaction pipelines, eliminating cumulative layout shifts, and establishing automated GitOps deployment lifecycles.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Technical Mastery</h2>
+    <div class="skills-grid">
+      <div class="skill-cat">Core Languages</div>
+      <div class="skill-list">TypeScript, JavaScript (ESNext), Python, SQL (PostgreSQL, SQLite), HTML5, CSS3 / Sass</div>
+
+      <div class="skill-cat">Frontend Architecture</div>
+      <div class="skill-list">React 18, Next.js, Redux Toolkit, Framer Motion, Web Workers, IndexedDB, Vite, Responsive Systems</div>
+
+      <div class="skill-cat">Backend &amp; APIs</div>
+      <div class="skill-list">Node.js, Express, Fastify, RESTful APIs, WebSockets, gRPC, JWT Authentication, Microservices</div>
+
+      <div class="skill-cat">Databases &amp; Caching</div>
+      <div class="skill-list">PostgreSQL (pgvector, indexing), Redis (caching, pub/sub), SQLite WASM, TimescaleDB, Prisma ORM</div>
+
+      <div class="skill-cat">DevOps &amp; Cloud</div>
+      <div class="skill-list">Docker, Kubernetes (EKS), Terraform (IaC), AWS (VPC, EC2, S3, RDS), GitHub Actions, Helm, Nginx, Linux</div>
+
+      <div class="skill-cat">Architecture Practices</div>
+      <div class="skill-list">Local-First Architecture, GitOps, Zero-Downtime Deployments, Observability (Prometheus, Grafana), TDD</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Key Engineering Projects</h2>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Understory Books &amp; eBaro</span> — <span class="item-sub">Lead Platform Architect</span>
+        </div>
+        <span class="item-date">2023 — 2024</span>
+      </div>
+      <div class="project-tech">React 18 &bull; Node.js &bull; TypeScript &bull; PostgreSQL &bull; Redis &bull; Cloudflare Workers</div>
+      <ul class="item-bullets">
+        <li>Engineered a bespoke digital publishing CMS and reader achieving <strong>0.00 Cumulative Layout Shift (CLS)</strong> with pre-computed font metric reservations.</li>
+        <li>Developed the <strong>eBaro AST parsing engine</strong> in Node.js, compiling multi-chapter manuscripts into lightweight JSON chunk payloads for edge caching.</li>
+        <li>Built an offline-first reading cache in IndexedDB with background asynchronous synchronization to PostgreSQL, eliminating reader interruption.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">TillPro POS</span> — <span class="item-sub">Lead Systems &amp; Frontend Engineer</span>
+        </div>
+        <span class="item-date">2024</span>
+      </div>
+      <div class="project-tech">React 18 &bull; TypeScript &bull; Web Workers &bull; SQLite WASM &bull; PostgreSQL &bull; Redis</div>
+      <ul class="item-bullets">
+        <li>Architected an offline-resilient point-of-sale terminal capable of processing transactions during internet disconnects via cryptographically signed append-only logs.</li>
+        <li>Offloaded barcode parsing and tax calculations to dedicated Web Workers, delivering deterministic sub-100ms checkout response times.</li>
+        <li>Implemented multi-terminal inventory reconciliation using row-level locking (<code>SELECT ... FOR UPDATE</code>) and Redis queues.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Cloud Infrastructure &amp; GitOps Automation</span> — <span class="item-sub">Cloud Infrastructure Engineer</span>
+        </div>
+        <span class="item-date">2024 — Present</span>
+      </div>
+      <div class="project-tech">Terraform &bull; Docker &bull; Kubernetes &bull; Helm &bull; AWS &bull; GitHub Actions &bull; Prometheus</div>
+      <ul class="item-bullets">
+        <li>Provisioned multi-AZ AWS infrastructure via declarative Terraform modules with remote S3 state and DynamoDB table locking.</li>
+        <li>Configured Kubernetes clusters with Cilium eBPF network policies, automated rolling deployments, and Horizontal Pod Autoscaling (HPA).</li>
+        <li>Built continuous delivery pipelines in GitHub Actions with multi-stage Docker builds, Trivy vulnerability scans, and Prometheus alerting.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Senior Full-Stack Engineer &amp; Solutions Architect</span> — <span class="item-sub">Atelier Engineering Consulting</span>
+        </div>
+        <span class="item-date">2022 — Present</span>
+      </div>
+      <ul class="item-bullets">
+        <li>Provide architecture consulting and full-stack development for enterprise clients across commerce, publishing, and cloud platforms.</li>
+        <li>Modernized legacy monoliths into maintainable microservice architectures, reducing deployment failure rates by 70%.</li>
+        <li>Mentored engineering teams in modern TypeScript patterns, CI/CD pipeline automation, and database indexing strategies.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Full-Stack Software Engineer</span> — <span class="item-sub">Enterprise Technology Solutions</span>
+        </div>
+        <span class="item-date">2020 — 2022</span>
+      </div>
+      <ul class="item-bullets">
+        <li>Developed scalable backend APIs in Node.js and high-performance web dashboards in React serving thousands of daily active users.</li>
+        <li>Engineered real-time synchronization services using WebSockets and Redis pub/sub for operational data feeds.</li>
+        <li>Decreased API p99 latency from 450ms to 65ms by implementing intelligent Redis caching layers and optimizing PostgreSQL queries.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="two-col">
+      <div>
+        <h2 class="section-title">Education</h2>
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <span class="item-title">Bachelor of Science in Computer Science</span>
+            </div>
+            <span class="item-date">2016 — 2020</span>
+          </div>
+          <div class="summary-text" style="margin-top: 2px;">
+            Focused on Distributed Systems, Algorithms &amp; Data Structures, Database Architecture, and Software Engineering Principles.
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="section-title">Certifications &amp; Focus</h2>
+        <ul class="item-bullets" style="margin-left: 14px;">
+          <li>AWS Certified Solutions Architect &mdash; Associate</li>
+          <li>Kubernetes Administrator (CKA Curriculum Training)</li>
+          <li>Clean Code, Microservices &amp; Domain-Driven Design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
